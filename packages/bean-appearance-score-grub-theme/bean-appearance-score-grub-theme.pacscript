@@ -1,11 +1,11 @@
-pkgname="bean-appearance-glass-grub-theme"
+pkgname="bean-appearance-score-grub-theme"
 gives="${pkgname}"
 arch=("all")
 pkgver="0.1.1"
-pkgdesc="Glass Grub Theme"
+pkgdesc="Score Grub Theme"
 maintainer="develop <develop@home.heaven>"
-source=("https://github.com/samwhelp/grub-theme-glass-remix/archive/refs/heads/main.tar.gz")
-url="https://github.com/samwhelp/deb-coffee-grub/tree/main/packages/bean-appearance-glass-grub-theme"
+source=("https://github.com/samwhelp/grub-theme-score-remix/archive/refs/heads/main.tar.gz")
+url="https://github.com/samwhelp/deb-coffee-grub/tree/main/packages/bean-appearance-score-grub-theme"
 depends=()
 pacdeps=()
 replace=()
@@ -28,8 +28,8 @@ package () {
 	#cd "${_archive}"
 
 	echo
-	echo cd "grub-theme-glass-remix-main"
-	cd "grub-theme-glass-remix-main"
+	echo cd "grub-theme-score-remix-main"
+	cd "grub-theme-score-remix-main"
 
 	local themes_dir_path="${pkgdir}/usr/share/grub/themes"
 
@@ -47,8 +47,8 @@ package () {
 
 
 	echo
-	echo cp -rfT . "${themes_dir_path}/grub-theme-glass"
-	cp -rfT . "${themes_dir_path}/grub-theme-glass"
+	echo cp -rfT . "${themes_dir_path}/grub-theme-score"
+	cp -rfT . "${themes_dir_path}/grub-theme-score"
 
 
 
